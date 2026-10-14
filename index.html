@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas</title>
+    <link rel="stylesheet" href="estiloMate.css">
+</head>
+<body>
+    <header class="menu">
+       <span class="logo">Matemáticas</span>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#tabla">Tabla</a>
+            <a href="#listas">Listas</a>
+            <a href="#geogebra">GeoGebra</a>
+            <a href="#multimedia">Multimedia</a>
+            <a href="#formulario">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="tit" id="inicio">
+        <div class="texto">
+            <h1>ESTÁS LISTO PARA <br>HACER REALIDAD<br>LO QUE ANTES NO ERA POSIBLE?</h1>
+            <p>Las matemáticas son una ciencia formal <br>que estudia las propiedades, relaciones <br>y el comportamiento de números, figuras geométricas<br> y conceptos abstractos mediante el razonamiento lógico.</p>
+            <p>Las matemáticas están mucho más presentes en nuestro día a día de lo que a veces imaginamos y son una herramienta fundamental para entender y transformar el mundo.</p>
+        </div>
+        <img src="im.webp" alt="Imagen referente a las matemáticas">
+    </section>
+     <p class="frase">Antes de comenzar, me gustaria poner una frase reflexibla porque no todo es quebrarte la cabeza pensando.<br><br> "Las matemáticas no se trata de números, ecuaciones, cálculos o algoritmos: se trata de comprensión." 
+        — William Paul Thurston.<br>Esta frase nos recuerda que las matemáticas son, en realidad, una forma de ver y comprender las reglas del funcionamiento del universo y de nuestras propias ideas.</p><br><br>
+    <section class="seccion" id="tabla">
+        <h2>Tabla de valores de una recta</h2>
+        <p class="intro">Ejemplo con la ecuación <strong>y = 2x + 1</strong>. Cada valor de <em>x</em> da un valor de <em>y</em>.</p>
+        <div class="tabla-scroll">
+            <table>
+                <caption>Valores de la función y = 2x + 1</caption>
+                <thead>
+                    <tr>
+                        <th>x</th>
+                        <th>Operación</th>
+                        <th>y</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>-2</td><td>2(-2) + 1</td><td>-3</td></tr>
+                    <tr><td>-1</td><td>2(-1)+ 1</td><td>-1</td></tr>
+                    <tr><td>0</td><td>2(0)+ 1</td><td>1</td></tr>
+                    <tr><td>1</td><td>2(1) +1</td><td>3</td></tr>
+                    <tr><td>2</td><td>2(2)+1</td><td>5</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="seccion" id="listas">
+        <h2>Conceptos y pasos</h2>
+        <div class="dos-columnas">
+            <div class="caja">
+                <h3>Ramas de las matemáticas</h3>
+                <ul>
+                    <li>Aritmética</li>
+                     <li>Álgebra</li>
+                    <li>Geometría</li>
+                    <li>Trigonometría</li>
+                    <li>Estadística y probabilidad</li>
+                    <li>Cálculo</li>
+                </ul>
+            </div>
+            <div class="caja">
+                <h3>Cómo graficar una recta</h3>
+                <ol>
+                    <li>Escribe la ecuación en la forma y = mx + b.</li>
+                    <li>Identifica la pendiente (m) y la ordenada al origen (b).</li>
+                    <li>Marca el punto (0, b) en el plano.</li>
+                    <li>Usa la pendiente para encontrar un segundo punto.</li>
+                    <li>Une los puntos con una línea recta.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion" id="geogebra">
+        <h2>Comprueba tu recta</h2>
+        <div class="geo">
+            <p>¿Quieres verificar si la recta que te salió en tu problema es correcta? <br>Abre el apartado de gráfica de GeoGebra, escribe tu ecuación <br>(por ejemplo <strong>y = 2x + 1</strong>) y compara la gráfica de GeoGebra con la de tu resultado.</p>
+            <a class="boton" href="https://www.geogebra.org/graphing?lang=es" target="_blank" rel="noopener noreferrer">Abrir GeoGebra</a>
+        </div>
+    </section>
+
+    <section class="seccion" id="multimedia">
+        <h2>Refuerza tus conocimientos con este video</h2>
+        <div class="dos-columnas">
+            <div class="caja">
+                <h3>Video explicativo</h3>
+                <div class="video-container">
+                    <iframe width="100%" height="250" src="https://www.youtube.com/embed/edE5Y1kOgFw" title="Video explicativo de matemáticas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="seccion" id="formulario">
+        <h2>Si aún tienes dudas, contáctate</h2>
+        <form action="#" method="post" onsubmit="event.preventDefault(); alert('Gracias, tu mensaje fue enviado.'); this.reset();">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="nivel">Nivel de estudios</label>
+            <select id="nivel" name="nivel">
+                <option value="secundaria">Secundaria</option>
+                <option value="preparatoria">Preparatoria</option>
+                <option value="universidad">Universidad</option>
+            </select>
+            
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu duda o comentario" required></textarea>
+            <button type="submit" class="boton">Enviar</button>
+        </form>
+    </section>
+    <footer>
+     <p>Hernandez Salmoran Nirvana Thailyn 5AMP-Construye</p>
+    </footer>
+</body>
+</html>
